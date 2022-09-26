@@ -9,7 +9,7 @@ resource "azurerm_resource_group" "default" {
   location = "East US"
 
   tags = {
-    Environment = "Demo Cluster"
+    Environment = "Demo Cluster Build"
   }
 }
 
@@ -27,7 +27,7 @@ resource "azurerm_kubernetes_cluster" "default" {
 
   default_node_pool {
     name            = "default"
-    node_count      = 2
+    node_count      = 3
     vm_size         = "Standard_D2_v2"
     os_disk_size_gb = 30
   }
