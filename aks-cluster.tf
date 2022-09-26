@@ -9,7 +9,7 @@ resource "azurerm_resource_group" "default" {
   location = "East US"
 
   tags = {
-    Environment = "Demo Cluster Build"
+    Environment = "Demo Cluster"
   }
 }
 
